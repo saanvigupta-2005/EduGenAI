@@ -1,0 +1,300 @@
+/* Custom styles for EduGenie */
+
+/* Root variables for consistent theming */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+/* Enhanced title styling */
+.display-1 {
+    font-size: 6rem;
+    font-weight: 900;
+    text-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #007bff, #0056b3, #004085);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    margin-bottom: 2rem !important;
+    position: relative;
+}
+
+.display-1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 4rem;
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-1 {
+        font-size: 3rem;
+        letter-spacing: -0.5px;
+    }
+}
+
+/* Body and general styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+main {
+    min-height: 80vh;
+}
+
+/* Enhanced card styling */
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.card.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card.border-2 {
+    border-width: 2px !important;
+}
+
+.card.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+/* Output box styling */
+#outputContent {
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fafbfc;
+}
+
+#outputContent h6 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#outputContent h6:first-child {
+    margin-top: 0;
+}
+
+/* Button enhancements */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control.bg-light {
+    background-color: #f8f9fa !important;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+/* Loading spinner customization */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 0.5em 0.75em;
+    border-radius: 6px;
+}
+
+/* Table styling */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.table td {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive design enhancements */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    footer,
+    .btn,
+    .card-header {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #dee2e6 !important;
+        box-shadow: none !important;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+    
+    .badge {
+        border: 1px solid #dee2e6;
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+}
+
+/* Animation for results section */
+#resultsSection {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading state styling */
+#loadingState .card-body {
+    padding: 3rem;
+}
+
+/* Feature cards styling */
+.fa-3x {
+    font-size: 2.5rem !important;
+}
+
+/* Content organization */
+.bg-light {
+    background-color: var(--light-color) !important;
+    border-radius: 8px;
+}
+
+/* Accessibility improvements */
+.btn:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Error state styling */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
