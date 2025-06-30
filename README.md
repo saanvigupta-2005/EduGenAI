@@ -25,17 +25,18 @@ EduGenAI is a smart educational assistant that **automatically generates high-qu
 
 ## 🧪 Demo
 
-> 🔗 [Live Demo](https://your-deployment-link.com)  
+> 🔗 [Live Demo](https://edugenai.onrender.com/)  
 
-![Demo Screenshot](demo.png)  
+![Demo Screenshot](![image](https://github.com/user-attachments/assets/38e105a5-0614-454e-b23b-146dfc49c2fe)
+)  
 > Example: Typing **“Introduction to Psychology”** gives you core topics like behaviorism, cognitive development, and neural structures — all in seconds.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend   | Backend       | AI Model  | Hosting     |
-|------------|---------------|-----------|-------------|
-| HTML/CSS/JS| Python (Flask)| Gemini API| Replit / Render / Vercel |
+| Frontend   | Backend       | AI Model  | Hosting |
+|------------|---------------|-----------|---------|
+| HTML/CSS/JS| Python (Flask)| Gemini API| Render  |
 
 
