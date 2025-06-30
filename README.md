@@ -27,7 +27,7 @@ EduGenAI is a smart educational assistant that **automatically generates high-qu
 
 > 🔗 [Live Demo](https://edugenai.onrender.com/)  
 
-![Alt Text](images.png) 
+![Alt Text]() 
 > Example: Typing **“Introduction to Psychology”** gives you core topics like behaviorism, cognitive development, and neural structures — all in seconds.
 
 ---
